@@ -1,0 +1,43 @@
+body {
+    background-color: mintcream;
+}
+
+#corpo {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: -20px auto;
+}
+
+header, section {
+    background-color: snow;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    box-shadow: 0 0 1em steelblue ;
+}
+
+#logo {
+    text-align: center;
+}
+
+#logo img {
+    width: 500px;
+}
+
+#local img {
+    width: 100%;
+}
+
+section {
+    border-radius: 1em;
+    padding: 1em 0.5em;
+    margin-top: 1.5em;
+}
+
+#container {
+    display: flex;    
+}
+
+h1 {
+    text-align: center;
+    color: steelblue;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Ferreira's Cake</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<div id="cabecalho">
+<header>
+    
+    <figure class=bannermenu>
+        <img src="Ferreira's Cake Logotipo.svg">
+    </figure>  
+
+    <nav id="menu">
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="receita.html">Receitas</a></li>
+        <li><a href="video.html">Videos</a></li>
+        <li><a href="fale-conosco.html">Contato</a></li>
+        </ul>
+    </nav>
+  
+</header>
+
+
+<body>
+
+
+    <form name="fconosco" method="GET" action="localhost">
+
+        <fieldset id="dp"><legend>Dados Pessoais</legend> 
+                
+            <section id="l1">   
+
+                <label for="name">Nome: </label>
+                <input type="text" name="nome" id="name" required="required" placeholder="Nome"/><br><br>
+
+                <label for="tel">Telefone: </label>
+                <input type="tel" name="tel" id="tel" placeholder="(00) 00000-0000" required="required"/><br><br>
+
+                <label for="sexo">Sexo: </label>
+                <select name="sex" id="sex">
+                <option value="-">-</option>
+                <option value="Feminino">Feminino</option>
+                <option value="masculino">Masculino</option></select> 
+
+            </section>
+
+            <aside id="l2">        
+                <label for="snome">Sobrenome: </label>
+                <input type="text" name="snome" id="snome" required="required" placeholder="Sobrenome"/><br><br>
+
+                <label for="e-mail">E-mail: </label>
+                <input type="email" name="e-mail"  id="e-mail" oninvalid="alert('E-mail Invalido')" placeholder="E-mail" required="required"/>
+            
+            </aside><br>
+        
+        </fieldset><br>
+
+        <section id="l3">
+
+            <fieldset id="finder"><legend>Como nos encontrou?</legend>
+
+                <input type="checkbox" name="finder" value="Facebook"/> Facebook <br>
+                <input type="checkbox" name="finder" value="Twitter"/> Twitter<br>
+                <input type="checkbox" name="finder" value="instagram"/> instagram<br>
+                <input type="checkbox" name="finder" value="Google"/> Google<br>
+                <input type="checkbox" name="finder" value="Outros"/> Outros
+
+            </fieldset><br>
+
+        </section>
+
+        <aside id="l4">
+
+            <fieldset id="anexo"><legend>Coloque sua observação e/ou mande sua receita</legend>
+
+                <textarea cols="50" rows="5" placeholder="observação"></textarea>
+
+                <input type="file" name="arquivo" id="anexo"/>
+
+            </fieldset><br>
+            
+        </aside>
+
+        <button type="reset" value="reset">Reset</button>
+        <button type="submit" value="enviar">Enviar</button>
+        
+    </form>
+
+</body>
+</div>
+
+<Footer id="rodape">
+    &copy; Direitos reservados à 25641077 - Diego Ferreira da Silva<br>
+    Aplicações para Internet | Ciencia da Computação - UNICSUL
+</Footer>
+
+</html>

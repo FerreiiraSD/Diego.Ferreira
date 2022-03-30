@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+div#corpo {
+    width: 60%;
+    margin: 0 auto;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+header p {
+    margin: 10px;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+nav {
+    text-align: center;
+}
+
+nav#menu li {
+    display: inline-flex;
+    padding: 5px;
+}
+
+nav#menu a {
+    color: black;
+    text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 12px;
+}
+
+nav#menu a:hover{
+    color: white;
+    text-shadow: 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em black;
+}
+
+main#sobre{
+    border: 5px solid rgba(128, 128, 128, 0.671);
+    background: rgba(128, 128, 128, 0.342);
+    margin: 10px 0px;
+    border-radius: 8px;
+}
+
+#colunas {
+    columns: 2;
+    padding: 20px;
+    text-align: justify;
+}
+
+#colunas p {
+    text-indent: 10px;
+}
+
+img#index {
+    width: 220%;
+}
+
+main#findex {
+    width: 48%;
+}
+
+footer#rodape, header#cab {
+    background: rgba(128, 128, 128, 0.671);
+    color: black;
+    text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+footer#rodape h2 {
+    text-align: center;
+    font-size: large;
+}
+
+form {
+    width: 350px;
+    margin: auto;
+    padding: 45px;
+    font-size: 17px;
+}
+
+label {
+    display: inline-flex;
+    width: 100px;
+    text-align: left;
+}
+
+input, select, option, textarea {
+    border-radius: 8px;
+    border-color: dodgerblue;
+
+}
+
+fieldset {
+    border-radius: 1em;
+    color: deeppink;
+    text-shadow: 0 0 0.2em deepskyblue, 0 0 0.2em deepskyblue, 0 0 0.2em deepskyblue;
+    border-color: dodgerblue;
+    background: rgba(170, 170, 170, 0.226);
+}
+
+legend {
+    color: deepskyblue;
+    text-shadow: 0 0 0.2em deeppink, 0 0 0.2em deeppink, 0 0 0.2em deeppink;
+}
+
+fieldset#finder, fieldset#anexo {
+    padding: 10px;
+}
+
+fieldset#dp {
+    padding: 20px;
+}
+
+.botao {
+    color: deeppink;
+    text-shadow: 0 0 0.2em deepskyblue, 0 0 0.2em deepskyblue, 0 0 0.2em deepskyblue;
+    border-color: dodgerblue;
+    border-radius: 8px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+#botao {
+    text-align: center;
+}
+
+.botao:hover {
+    color: deepskyblue;
+    background-color: deeppink;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+.checkbox {
+display: inline-block;
+}
+
+input:checked + .checkbox {
+    color: deepskyblue;
+    text-shadow: 0 0 0.2em deeppink, 0 0 0.2em deeppink, 0 0 0.2em deeppink;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.foto img {
+    max-width: 300px;
+}
+
+.foto {
+    border: 10px solid white;
+    box-shadow: 0 0 2em black;
+    max-width: 300px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+figcaption {
+    padding: 10px;
+    background: white;
+}
+
+figcaption#ft2 {
+    padding: 5px;
+    background: white;
+}
+
+span {
+    color: red;
+}
+
+#rotate40 {
+    transform: rotate(-10deg);
+    margin: 50px auto;
+}
+
+figure.foto:hover {
+    transform: rotate(0);
+    transform: translateX(30px) scale(1.2);
+    margin: 50px;
+    cursor: pointer;
+}
+
+figure#rotate40:hover {
+    transform: rotate(0);
+    transform: translateX(30px) scale(1.2);
+    margin: 50px;
+    cursor: pointer;
+}
+
+
+@font-face {
+    font-family: "teste";
+    src: url(font/ShadowsIntoLight-Regular.ttf);
+}
+
+h2#teste{
+    font-family: "teste";
+}
+
+figure#hobbie img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+figure#hobbie {
+    width: 250px;
+    border: 5px solid white;
+    box-shadow: 0 0 2em black;
+    text-align: center;
+    display: block;
+    background: white;
+    border-radius: 10px;
+}
+
+figcaption {
+    padding: 10px;
+}
+
+div#box {
+    display: inline-flex;
+    align-items: center;
+    margin: 15px;
+    width: 50%;
+    border-radius: 10px;
+    background: rgba(155, 157, 160, 0.685);
+    transition-property: border;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+div#box:hover{
+    border: 3px solid black;
+}
+
+div#dupla {
+    display: inline-flex;
+    width: 100%;
+}
+
+audio {
+    transition:all 0.5s linear;
+    border-radius:7px 7px 7px 7px ;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+audio:hover, audio:focus, audio:active {
+    transform: scale(1.05);
+}
+
+iframe {
+    width: 640px;
+    height: 293px;
+    border-radius: 10px;
+}
+
+div#box-video {
+    display: inline-flex;
+    align-items: center;
+    margin: 15px;
+    width: 525px;
+    border-radius: 10px;
+    background: rgba(155, 157, 160, 0.685);
+    transition-property: border;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+div#box-video:hover{
+    border: 3px solid black;
+}
+
+h5 {
+    padding-right: 10px;
+}
+
+#corpo a {
+    color: black;
+    text-decoration: none;
+}
+
+div#link {
+    text-align: center;
+}
+
+div#link a:hover {
+    color: red;
+    text-decoration: underline;
+}

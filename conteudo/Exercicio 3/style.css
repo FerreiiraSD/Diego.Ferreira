@@ -1,0 +1,237 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+* {
+    background-image: url(bc.jpg);
+    background-attachment: fixed;
+    }
+
+p {
+    text-align: justify;
+    text-indent: 25px;
+    font-size: 15pt;
+}
+
+li {
+    font-size: 15pt;
+}
+
+ol {
+    font-size: 15pt;
+}
+
+ul {
+    font-size: 15pt;
+}
+
+h3 {
+    font-family: 'Caveat', cursive;
+    color: crimson;
+    font-size: 100px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+h3.video1 {
+    font-family: 'Caveat', cursive;
+    color: crimson;
+    font-size: 100px;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+h3.video2 {
+    font-family: 'Caveat', cursive;
+    color: crimson;
+    font-size: 100px;
+    text-align: right;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+figure.bannermenu img {
+    width: 40%;
+    height: 40%;
+}
+
+figure.bannerindex img {
+    width: 700px;
+    height: 700px;
+}
+
+figure.redvelvet img {
+    width: 300px;
+    height: 200px;
+    border: 0.5px solid #000;
+    box-shadow: 0px 0px 4px 4px rgba(255, 0, 0, 0.486);
+}
+
+figure.flonegra img {
+    width: 300px;
+    height: 200px;
+    border: 0.5px solid #000;
+    box-shadow: 0px 0px 4px 4px rgba(255, 0, 0, 0.486);
+}
+
+figure.redvelvet {
+    margin-left: 15%;
+}
+
+nav#menu {
+    display: block;
+}
+
+nav#menuindex ul {
+    list-style: none;
+}
+
+nav#menu ul {
+    list-style: none;
+    position: absolute;
+    left: 410px;
+    top: 180px;
+}
+
+nav#menuindex li {
+    display: inline-block;
+    padding: 10px;
+    margin: 2px;
+}
+
+nav#menu li {
+    display: inline-block;
+    padding: 10px;
+    margin: 2px;
+    font-size: 30px;
+}
+
+nav#menuindex a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#menuindex a:hover {
+    color: tomato;
+}
+
+nav#menu a:hover {
+   color: tomato;
+}
+
+div#cabecalho {
+    position: relative;
+}
+
+div {
+    width: 1000px;
+    margin: -20px auto 0 auto;
+    padding: 10px;
+}
+
+footer#rodape {
+    clear: both;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+section {
+    display: block;
+    width: 490px;
+    float: left;
+    background-color: blueviolet;
+}
+
+aside#lateral {
+    display: block;
+    width: 490px;
+    float: right;
+    background-color: blue;
+}
+
+h3#fn {
+    clear: both;
+    margin-top: 20px;
+}
+
+section#2 {
+    display: block;
+    width: 490px;
+    float: left;
+}
+
+aside#lateral2 {
+    display: block;
+    width: 490px;
+    float: right;
+    margin-top: 40px;
+}
+
+form {
+    margin: 0 auto;
+    width: 650px;
+    padding: 1em;
+    border: 1px solid #000;
+    border-radius: 1em;
+    font-size: 17px;
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+    text-align: left;
+}
+
+fieldset {
+    border-radius: 1em;
+}
+
+legend {
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.623);
+}
+
+fieldset#finder {
+    width: 200px;
+    padding: 10px;
+}
+
+fieldset#anexo {
+    width: 350px;
+    padding: 10px;
+}
+
+fieldset#dp {
+    padding: 20px;
+}
+
+section#l1 {
+    display: block;
+    width: 300px;
+    float: left;
+    background-color: aqua;
+}
+
+aside#l2 {
+    display: block;
+    width: 300px;
+    float: right;
+    background-color: blueviolet;
+}
+
+section#l3 {
+    display: block;
+    float: left;
+}
+
+aside#l4 {
+    display: block;
+    float: right;
+}

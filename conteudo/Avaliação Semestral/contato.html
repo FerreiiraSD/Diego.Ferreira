@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+  <title>Diih Ferreiira</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+</head>
+
+<body>
+
+<div id="corpo">
+
+    <header id="cab">
+
+        <p>Chat</p>
+    
+        <nav id="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="hobbies.html">hobbies</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+    
+    </header>
+
+    <div id="formulario">
+
+        <form name="fconosco" method="GET" action="localhost">
+
+            <fieldset id="dp">
+                
+                <legend>Dados Pessoais</legend> 
+                 
+    
+                <label for="name">Nome: </label>
+                <input type="text" name="nome" id="name" required="required" placeholder="Nome Completo"/><br><br>
+    
+                <label for="tel">Telefone: </label>
+                <input type="tel" name="tel" id="tel" placeholder="(00) 00000-0000" required="required"/><br><br>
+
+                <label for="e-mail">E-mail: </label>
+                <input type="email" name="e-mail"  id="e-mail" oninvalid="alert('E-mail Invalido')" placeholder="E-mail" required="required"/><br><br>
+    
+                <label for="sexo">Sexo: </label>
+                <select name="sex" id="sex">
+                <option value="-">-</option>
+                <option value="Feminino">Feminino</option>
+                <option value="masculino">Masculino</option></select>
+            
+            </fieldset><br>
+    
+    
+            <fieldset id="finder"><legend>Onde Posso Te Chamar?</legend>
+    
+                <input type="checkbox" id="face"/><div class="checkbox"> <label class="cursor" for="face">Facebook</label></div>
+                <input type="checkbox" id="email"/><div class="checkbox"> <label class="cursor" for="email">E-mail</label></div><br>
+                <input type="checkbox" id="whats"/><div class="checkbox"> <label class="cursor" for="whats">Whatsapp</label></div>
+                <input type="checkbox" id="tele"/><div class="checkbox"> <label class="cursor" for="tele">Telegram</label></div>
+                
+            </fieldset><br>
+    
+            <fieldset id="anexo">
+                
+                <legend>Deixe sua Mensagem</legend>
+    
+                <textarea cols="40" rows="5" placeholder="digite aqui sua mensagem..."></textarea>
+    
+            </fieldset><br>
+
+            <div id="botao">
+
+                <input type="submit" name="botao" value="Enviar" class="botao">
+                <input type="reset" name="rest" value="Reset" class="botao">
+
+            </div>
+            
+        </form>
+  
+    </div>
+
+    <footer id="rodape">
+
+        <h2 id="teste">&copy; 25641077 - Diego Ferreira da Silva (03/06/2021)<br>
+        Aplicações para Internet | Ciencia da Computação - UNICSUL</h2>
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>

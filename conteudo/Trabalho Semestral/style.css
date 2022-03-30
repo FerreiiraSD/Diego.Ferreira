@@ -1,0 +1,314 @@
+html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: black;
+    overflow-x: hidden;
+    color: LightCyan;
+}
+
+body {
+    display: flexbox;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(magenta,mediumblue);
+    border-radius: 50px;
+}
+
+.rodape {
+    text-align: center;
+    color: lightslategray;
+}
+
+.home {
+    margin: auto;
+    text-align: center;
+}
+
+nav#menuindex li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav#menuindex a {
+    color: white;
+    text-shadow: 0 0 0.2em blue, 0 0 0.2em blue, 0 0 0.2em blue;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+nav#menuindex a:hover {
+    text-shadow: 0 0 0.2em deeppink, 0 0 0.2em deeppink, 0 0 0.2em deeppink;
+}
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    position: absolute;
+    left: 270px;
+    top: 90px;
+}
+
+nav#menu li {
+    display: inline-block;
+    padding: 10px;
+    margin: 2px;
+}
+
+nav#menu a {
+    color: white;
+    text-shadow: 0 0 0.2em blue, 0 0 0.2em blue, 0 0 0.2em blue;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav#menu a:hover {
+    text-shadow: 0 0 0.2em deeppink, 0 0 0.2em deeppink, 0 0 0.2em deeppink;
+}
+
+
+.cabecalho {
+    position: relative;
+    width: 1000px;
+    margin: -20px auto 0 auto;
+}
+
+.corpinho {
+    width: 700px;
+    font-family:'Lucida Sans';
+    margin: auto;
+}
+
+#main {
+    width: 1000px;
+    margin: auto;
+}
+
+#main2 {
+    margin: auto;
+}
+
+#contato {
+    width: 700px;
+    margin: auto;
+}
+
+p {
+    text-indent: 15px;
+    text-align: justify;
+    font-size: medium;
+}
+
+h1 {
+    text-align: center;
+    font-size: x-large;
+    color: PowderBlue;
+}
+
+h3 {
+    text-align: center;
+}
+
+figure#foto img {
+    width: 100%;
+}
+
+figure#foto figcaption {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+figcaption {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+h6 {
+    text-align: right;
+    font-size: medium;
+}
+
+h6 a {
+    text-decoration: none;
+    color: red;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+}
+
+iframe {
+    width: 700px;
+    height: 350px;
+}
+
+strong {
+    color: PowderBlue;
+}
+
+a#riscado {
+    text-decoration: line-through;
+    font-weight: bold;
+}
+
+a#negrito {
+    font-weight: bold;
+}
+
+section#c1 {
+    display: block;    
+    float: left;
+}
+
+section#c2 {
+    display: block;    
+    float: right;
+}
+
+footer#ffinal {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+figure#botao img{
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+}
+
+figure#botao {
+    height: 180px;
+    padding: 15px;
+    padding-bottom: 25px;
+}
+
+li {
+    list-style: none;
+}
+
+h4 {
+    font-size: 15pt;
+    color: PowderBlue;
+    margin-top: 10px;
+}
+
+p#bnav {
+    text-indent: 10px;
+    text-align: justify;
+    font-size: medium;
+}
+
+a {
+    text-decoration: none;
+    color: LightCyan;
+}
+
+fieldset {
+    border: 0;
+}
+
+input,textarea,button {
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"], .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #ffffff;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.2);
+    width: 180px;
+}
+
+.botaoc {
+    font-size: 1em;
+    background: #5e2cf5;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,00.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.botao:hover {
+    background: linear-gradient(rgba(255, 0, 255, 0.3),rgba(0, 0, 255, 0.3));
+    border-radius: 10px;
+    box-shadow: inset 2xp 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+#l1 {
+    display: block;
+    float: left;
+}
+
+#l2 {
+    display: block;
+    float: right;
+}
+
+#l3, #l4 {
+    clear: both;
+    padding-top: 20px;
+}
+
+form {
+    width: 460px;
+    margin: auto;
+}
+
+h5 {
+    font-size: 25px;
+    color: lightcyan;
+    text-shadow: 0 0 0.2em blue, 0 0 0.2em blue, 0 0 0.2em blue;
+}
+
+#tabela {
+    width: 650px;
+    margin: auto;
+    font-size: medium;
+    text-align: center;
+    color: black;
+    background: linear-gradient(rgba(255, 0, 255, 0.5),rgba(0, 0, 255, 0.5));
+    border-collapse: separate;
+    border-spacing: 0px 5px;
+    border-radius: 10px;
+    border: 1px solid lightcyan;
+    box-shadow: 0 0 0.2em lightcyan, 0 0 0.2em lightcyan, 0 0 0.2em lightcyan;
+}
+
+table#borda {
+    width: 600px;
+    margin: auto;
+    border: 1px solid lightcyan;
+    box-shadow: 0 0 0.2em lightcyan, 0 0 0.2em lightcyan, 0 0 0.2em lightcyan;
+    border-spacing: 5px 5px;
+    border-radius: 10px;
+    background: rgba(224, 255, 255, 0.5);
+}
+
