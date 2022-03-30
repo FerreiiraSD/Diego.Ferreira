@@ -1,37 +1,67 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="PT-BR">
 
-You can use the [editor on GitHub](https://github.com/FerreiiraSD/Diego.Ferreira/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Ferreira</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/Style.css">
+</head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<body>
+    
+    <div id="corpo">
 
-### Markdown
+        <header>
+            <figure id="logo">
+                <img src="img/Logo DIIH.png" alt="Logo Diego Ferreira">
+            </figure>
+        </header>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        <section>
+            <h1>HUB Projetos</h1>
 
-```markdown
-Syntax highlighted code block
+            <div id="container">
 
-# Header 1
-## Header 2
-### Header 3
+                <figure id="local">
+                    <a href="conteudo/Exercicio 1/index.html"><img src="img/atividade 1.png"></a>
+                </figure>
+                
+                <figure id="local">
+                    <a href="conteudo/Exercicio 2/index.html"><img src="img/atividade 2.png"></a>
+                </figure>
 
-- Bulleted
-- List
+            </div>
 
-1. Numbered
-2. List
+            <div id="container">
 
-**Bold** and _Italic_ and `Code` text
+                <figure id="local">
+                    <a href="conteudo/Exercicio 3/index.html"><img src="img/atividade 3.png"></a>
+                </figure>
+                
+                <figure id="local">
+                    <a href="conteudo/exercicio 4/index.html"><img src="img/atividade 4.png"></a>
+                </figure>
 
-[Link](url) and ![Image](src)
-```
+            </div>
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+            <div id="container">
 
-### Jekyll Themes
+                <figure id="local">
+                    <a href="conteudo/Avaliação Semestral/index.html"><img src="img/Games.png"></a>
+                </figure>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/FerreiiraSD/Diego.Ferreira/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+                <figure id="local">
+                    <a href="conteudo/Trabalho Semestral/index.html"><img src="img/dfs logo.png"></a>
+                </figure>
 
-### Support or Contact
+            </div>
+            
+        </section>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+    </div>    
+
+</body>
+
+</html>
