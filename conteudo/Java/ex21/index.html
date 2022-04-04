@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+    <head>
+
+        <title>Calculo IMC</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <form id="form" class="form">
+
+            <h1>Calculo IMC</h1>
+
+            <label for="nome">Nome: <input id="nome" type="text"></label>
+            <label for="altura">Altura: <input id="altura" type="number"></label>
+            <label for="peso">Peso: <input id="peso" type="number"></label>
+            <label for="imc">IMC <input disabled="disabled" name="imc" id="imc"></label>
+            <button>Calcular</button>
+
+        </form>
+
+        <table>
+
+            <thead>
+
+                <td>Condição</td>
+                <td>IMC em Mulheres</td>
+                <td>IMC em Homens</td>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>abaixo do peso</td>
+                    <td>&lt; 19,1</td>
+                    <td>&lt; 20,7</td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>no peso normal</td>
+                    <td>19,1 - 25,8</td>
+                    <td>20,7 - 26,4</td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>marginalmente acima do peso</td>
+                    <td>25,8 - 27,3</td>
+                    <td>26,4 - 27,8</td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>acima do peso ideal</td>
+                    <td>27,3 - 32,3</td>
+                    <td>27,8 - 31,1</td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>obeso</td>
+                    <td>&gt; 32,3</td>
+                    <td>&gt; 31,1</td>
+    
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <script>
+
+            function validaEntrada(args) {
+            for (let i = 0; i < arguments.length; i++) {
+                if (!!arguments[i] == false || arguments[i] < 0) {
+                return false;
+                }
+            }
+            return true;
+            }
+
+            function calcularIMC(peso, altura) {
+            altura = altura / 100;
+            return (peso / (altura * altura));
+            }
+
+            const formcalimc = document.getElementById("form")
+                    createMessage("Obesidade II", "danger")
+
+            formcalimc.addEventListener('submit', function (event) {
+
+                event.preventDefault();
+
+                const peso = parseFloat(document.getElementById('peso').value);
+                const altura = parseFloat(document.getElementById('altura').value);
+
+                if (validaEntrada(peso, altura)) {
+                    const imc = calcularIMC(peso, altura);
+                    document.getElementById('imc').value = parseFloat(imc).toFixed(2);
+                    verificarIMC(imc);
+                } else {
+                    document.getElementById('imc').value = "## ERRO ##";
+                }
+                });
+
+                function verificarIMC(imc) {
+                if (imc < 17) {
+                    alert("Peso Abaixo")
+                } else if (imc > 17 && imc <= 18.49){
+                    createMessage("Abaixo do peso", "warning")
+                } else if (imc >= 18.5 && imc <= 24.99){
+                    createMessage("Peso normal", "sucess")
+                } else if (imc >= 25 && imc <= 29.99){
+                    createMessage("Acima do peso", "warning")
+                } else if (imc >= 30 && imc <= 34.99){
+                    createMessage("Obesidade I", "alert")
+                } else {
+                }
+                }
+
+                function createMessage(msg, type) {
+                document
+                    .querySelector("body")
+                    .insertAdjacentHTML("beforebegin", `<div class='message ${type}'>${msg}</div>`);
+
+                setTimeout(function () {
+                    deleteMessage();
+                }, 3000);
+                }
+
+                function deleteMessage() {
+                const list = document.querySelectorAll(".message");
+                for (const item of list) {
+                    item.remove();
+                }
+                }
+
+
+        </script>
+
+        <br>
+
+        <footer>
+
+            <hr>
+
+            &copy; 25641077 - Diego Ferreira 
+
+        </footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+    <head>
+
+      <title>Calculo equação 2ºGrau</title>
+      <meta charset="utf-8"/>
+
+    </head>
+
+    <body>
+
+      <script>
+        
+        let a, b, c;
+
+        a = parseInt(prompt("Digite o valor de A"));
+        b = parseInt(prompt("Digite o valor de B"));
+        c = parseInt(prompt("Digite o valor de C"));
+
+        delta = b**b - (4*a*c);
+
+        r1 = (-b + Math.sqrt(delta) /(2*a));
+        r2 = (-b - Math.sqrt(delta) /(2*a));
+
+        alert("Raizes " +r1 + " e " +r2  );
+
+      </script>
+
+      <br>
+
+      <footer>
+
+        <hr>
+
+        &copy; 25641077 - Diego Ferreira 
+    
+      </footer>
+
+    </body>
+
+</html>

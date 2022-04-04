@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <style>
+
+      body {
+         width: 300px;
+         position: absolute;
+         top: 25%;
+         left: 40%;
+      }
+
+    </style>
+</head>
+
+
+<body>
+
+    <form name="calcform" method="post" action="">
+        <fieldset>
+           <legend>Calculadora</legend>
+
+           <label for="valor1">Digite o valor:</label>
+           <input type="text" name="valor1" id="valor1" /><br><br>
+
+           <label for="valor2">Digite o valor:</label>
+           <input type="text" name="valor2" id="valor2" /><br><br>
+
+           <label for="oper">Selecione a operação:</label>
+           <select name="oper" id="oper">
+              <option value="somar">Somar</option>
+              <option value="subtrair">Subtrair</option>
+              <option value="multiplicar">Multiplifcar</option>
+              <option value="dividir">Dividir</option>
+           </select><br><br>
+
+           <label for="res">Resultado:</label>
+           <input type="text" name="res" id="res" /><br><br>
+
+           <input type="button" value="Calcular" class="botao" onClick="calcular(document.calcform.oper.value)"/>
+        </fieldset>
+     </form>
+
+
+
+        <script>
+            function calcular(oper) {
+            var valor1 = document.calcform.valor1.value;
+            var valor2 = document.calcform.valor2.value;
+
+            if (oper == "somar") {
+            var res = parseInt(valor1) + parseInt(valor2);
+            } else {
+            if (oper == "subtrair") {
+            var res = valor1-valor2;
+            } else {
+            if (oper == "multiplicar") {
+            var res = valor1*valor2;
+            } else {
+            var res = valor1/valor2;
+         }
+      }
+   }
+
+            document.calcform.res.value = res;
+}
+        </script>
+
+      <br>
+
+      <footer>
+
+         <hr>
+
+         &copy; 25641077 - Diego Ferreira 
+
+      </footer>
+
+</body>
+</html>

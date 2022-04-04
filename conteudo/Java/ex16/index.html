@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+    <head>
+
+        <title>Juros Parcelo</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <form id="form" class="form">
+
+            <div>
+
+                <h1>Juros por Parcelas</h1>
+
+                <label for="vcompra">Valor da Compra: </label><input id="vcompra" type="number"><br>
+                <label for="qparcel">Quantidade de Parcelas: </label><input id="qparcel" type="number"><br>
+            
+                <button id="calcular">Calcular</button>
+
+            </div>
+
+        </form>
+
+        <table>
+
+            <thead>
+
+                <td>Nº Parcelas</td>
+                <td>Juros</td>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>1</td>
+                    <td>0%</td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>2</td>
+                    <td>3%</td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>4</td>
+                    <td>7%</td>
+    
+                </tr>
+
+            </tbody>
+        
+        </table>
+
+        <script>
+
+            const calcular = document.getElementById('calcular');
+
+            function soma (){
+
+                const vcompra = document.getElementById('vcompra').value;
+                const qparcel = document.getElementById('qparcel').value;
+                
+
+                if (vcompra !== '' && qparcel !== ''){        
+                    
+
+                    if (qparcel == 1){
+                        alert("Numero de parcela 1, valor a ser pago R$"+vcompra)
+                    }
+
+                    else if (qparcel == 2){
+                        juros = 3
+                        cjuros = vcompra * juros / 100
+                        tcompra = parseFloat(vcompra) + cjuros
+                    }
+
+                    else if (qparcel == 4){
+                        juros = 7
+                        cjuros = vcompra * juros / 100
+                        tcompra = parseFloat(vcompra) + cjuros
+                    }
+
+                    else {
+                        alert('Numeros de parcelas incorreto')
+                    }
+
+                    alert (`Numero de parcelas ${qparcel}, valor a ser pago R$ ${tcompra}`)
+                   
+                    
+                }
+
+                else {
+                    alert('Preencha os campos')
+                }
+
+
+            }
+
+            calcular.addEventListener('click', soma);
+
+        </script>
+
+        <br>
+
+        <footer id="rodape">
+
+            &copy; 25641077 - Diego Ferreira 
+
+        </footer>
+
+    </body>
+
+</html>

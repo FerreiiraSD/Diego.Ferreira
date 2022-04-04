@@ -1,0 +1,54 @@
+body {
+    width: 50%;
+    margin: auto;
+}
+
+#cabecalho, #rodape {
+    background-color: rgb(15, 14, 85);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    text-align: center;
+}
+
+#cabecalho {
+    font-size: 300%;
+    font-family: cursive;
+}
+
+#rodape {
+    font-size: 125%;
+}
+
+h1 {
+    background-color: rgba(215, 228, 250, 0.692);
+    margin: 0%;
+    text-align: center;
+    padding: 30px;
+    font-family: cursive;
+    font-size: 150%;
+}
+
+#corpo {
+    background-color: rgba(215, 228, 250, 0.692);
+    display: flex;
+}
+
+#dog {
+    border: 2px solid black;
+    padding: 10px;
+    width: 40%;
+}
+
+figure {
+    background-color: white;
+}
+
+#dog img {
+    width: 100%;
+}
+
+figcaption {
+    padding: 15px;
+    text-align: center;
+    font-size: large;
+}

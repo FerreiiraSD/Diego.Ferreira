@@ -1,0 +1,103 @@
+body {
+    width: 600px;
+    margin: auto;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: large;
+}
+
+nav {
+    margin-top: -5px;
+    text-align: center;
+}
+
+#index {
+    background-color: rgb(18, 86, 131);
+}
+
+#blog {
+    background-color: rgb(18, 131, 37);
+}
+
+#pg1 {
+    background-color: rgb(202, 134, 6);
+}
+
+#pg2 {
+    background-color: rgb(93, 22, 93);
+}
+
+#contato {
+    background-color: brown;
+}
+
+figure {
+    text-align: center;
+    opacity: 0.5;
+}
+
+p {
+    text-align: justify;
+}
+
+h2 {
+    font-size: medium;
+    margin-top: -10px;
+    opacity: 0.6;
+}
+
+table,td {
+    margin: auto;
+    width: 350px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+table {
+    border-spacing: 0;
+}
+
+td {
+    padding: 5px;
+}
+
+form {
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    font-size: 17px;
+}
+
+label {
+    display: inline-flex;
+    width: 100px;
+    text-align: left;
+}
+
+fieldset {
+    border-radius: 1em;
+}
+
+#finder, #anexo {
+    padding: 10px;
+}
+
+#dp {
+    padding: 20px;
+}
+
+.botao {
+    border-radius: 8px;
+}
+
+#botao {
+    text-align: center;
+}
+
+.checkbox {
+display: inline-block;
+}

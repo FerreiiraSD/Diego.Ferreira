@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Soma Tabela</title>
+
+    </head>
+
+    <body>
+
+        <table border="1" id="tbl">
+            
+            <thead>
+
+                <tr>
+                    <td>Nome</td>
+                    <td>Idade</td>
+                </tr>
+
+            </thead>
+                
+            <tbody>
+
+                <tr>
+                    <td>Diego</td>
+                    <td>25</td>
+                </tr>
+
+                <tr>
+                    <td>Maycon</td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td>Demetrio</td>
+                    <td>19</td>
+                </tr>
+
+                <tr>
+                    <td>Edgennan</td>
+                    <td>20</td>
+                </tr>
+
+                <tr>
+                    <td>Bruno</td>
+                    <td>21</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+        
+        <button id="btn">SOMAR</button><br>
+            
+        <script>
+
+            let btn = document.getElementById('btn');
+                    
+            function adicionaLinha() {
+
+                let valores1 = document.getElementsByTagName('td');
+                console.log(valores1)
+                let soma = 0;
+
+                for (i = 1; i <= valores1.length; i++){
+
+                    if (i>1 && (i%2 == 1)){
+                        soma = soma+parseInt(valores1[i].innerHTML);
+                    }
+                }
+    
+                let tabela = document.getElementById('tbl');
+                let tfoot = document.createElement('tfoot');
+                tabela.appendChild(tfoot);
+                var linha = tabela.insertRow();
+                var celula1 = linha.insertCell(0);
+                var celula2 = linha.insertCell(1);
+        
+                celula1.innerHTML = 'Total: '; 
+                celula2.innerHTML =  soma; 
+
+                btn.disabled = true
+                btn.innerHTML = "Valor Somado";
+            }
+
+            btn.addEventListener('click',adicionaLinha);
+    
+        </script> 
+
+        <footer>
+
+            <hr>
+
+            &copy; 25641077 - Diego Ferreira 
+
+        </footer>
+                
+    </body>
+
+</html>

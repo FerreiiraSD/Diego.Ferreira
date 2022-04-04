@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+    <head>
+
+        <title>Importo de Renda</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <form id="form" class="form">
+
+            <div>
+
+                <h1>Imposto de Renda</h1>
+
+                <label for="nome">Nome: </label><input id="nome" type="text"><br>
+                <label for="salario">Salario: </label><input id="salario" type="number"><br>
+            
+                <button id="calcular">Calcular</button>
+
+            </div>
+
+        </form>
+
+        <table>
+
+            <thead>
+
+                <td>Faixa Salarial</td>
+                <td>Alíquota</td>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Até R$ 1.434</td>
+                    <td>0% (isento)</td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>De R$ 1.434 a R$ 2.150</td>
+                    <td>7,5%</td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>De R$ 2.150 a R$ 2.866</td>
+                    <td>15%</td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>De R$ 2.866 a R$ 3.582</td>
+                    <td>22,5%</td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>Acima de R$ 3.582</td>
+                    <td>27,5%</td>
+    
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <script>
+
+            const calcular = document.getElementById('calcular');
+
+            function soma (){
+
+                const nome = document.getElementById('nome').value;
+                const salario = document.getElementById('salario').value;
+                
+
+                if (nome !== '' && salario !== ''){        
+                    
+
+                    if (salario <= 1434){
+                        aliquota = 0
+                    }
+
+                    else if (salario > 1434 && salario <= 2150 ){
+                        aliquota = 7.5
+                        valorir = salario * aliquota/ 100
+                        totalir = parseFloat(salario) + valorir
+                    }
+
+                    else if (salario > 2150 && salario <= 2866 ){
+                        aliquota = 15
+                        valorir = salario * aliquota / 100
+                        totalir = parseFloat(salario) + valorir
+                    }
+
+                    else if (salario > 2866 && salario < 3582 ){
+                        aliquota = 22.5
+                        valorir = salario * aliquota / 100
+                        totalir = parseFloat(salario) + valorir
+                    }
+
+                    else{
+                        aliquota = 27,5
+                        valorir = salario * aliquota / 100
+                        totalir = parseFloat(salario) + valorir
+                    }
+
+                    alert (`Sr ${nome} o valor do Imposto de renda é R$ ${totalir}\nsobre a porcentagem de ${aliquota}%`)
+                   
+                }
+
+                else {
+                    alert('Preencha os campos')
+                }
+
+            }
+
+            calcular.addEventListener('click', soma);
+
+        </script>
+
+        <br>
+
+        <footer>
+
+            <hr>
+
+            &copy; 25641077 - Diego Ferreira 
+
+        </footer>
+
+    </body>
+
+</html>

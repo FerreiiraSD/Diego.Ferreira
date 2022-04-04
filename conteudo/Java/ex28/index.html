@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+	<head>
+
+		<meta charset="UTF-8">
+		<title>Gerador de Tabela dinâmica</title>
+
+		<style>
+
+			body {
+				width: 600px;
+			}
+
+			table {
+				background-color: blue;
+
+			}
+			
+			td {
+				border: 2px black solid;
+				background-color: chartreuse;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<h2>Gerador de tabela:</h2>
+
+		<form>
+
+			Linhas: <input type="text" id="linha" size="10">
+
+			Colunas: <input type="text" id="coluna" size="10">
+
+			<input type="button" id="btn" value="Criar tabela">
+
+		</form><br>
+
+		<table id="tabela">
+
+			<thead></thead>
+
+		</table>
+
+	<script>
+
+		function criaTabela() {
+
+			let qntLinhas = document.getElementById("linha").value
+			let qntColunas = document.getElementById("coluna").value
+
+			tbl = document.getElementById('tabela');
+
+			for (let i = 1; i < qntLinhas; i++) {
+				qtdlinhas = tbl.rows.length;
+				nrlinha = tbl.insertRow(qtdlinhas);
+
+				for (let j = 0; j < qntColunas; j++){
+					
+					if ((j%2) != 0){
+
+						nrcell = nrlinha.insertCell(j);
+						nrcell.innerHTML = "L"+i+ "- C"+j;
+						nrcell.style.backgroundColor='yellow';
+
+					}
+
+					else{
+
+						nrcell = nrlinha.insertCell(j);
+						nrcell.innerHTML = "L"+i+ "- C"+j;
+					}
+				}
+			}
+			
+			btn.disabled = true
+            btn.value = "Tabela Criada";
+		}	
+
+		const btn = document.getElementById("btn");
+
+		btn.onclick = criaTabela;
+
+	</script>
+
+	<footer>
+
+		<hr>
+
+		&copy; 25641077 - Diego Ferreira 
+
+	</footer>
+
+</body>
+
+</html>

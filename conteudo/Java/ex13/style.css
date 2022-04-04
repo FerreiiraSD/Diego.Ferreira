@@ -1,0 +1,15 @@
+form {
+    border: 22px double red;
+    font-family: Verdana;
+    width: 400px;
+    padding: 30px;
+    font-size: 18pt;
+}
+
+input {
+    border: 1px solid black;
+    background-color: yellow;
+    font-size: 18pt;
+    padding: 5px;
+}
+

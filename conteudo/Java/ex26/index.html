@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Tabelinha do cão</title>
+        <meta charset="UTF-8">
+
+    </head>
+
+    <body>
+
+        <input type="number" name="linhas" id="linhas">
+        <button id="btn">GERAR</button><br><br>
+
+        <table id="tbl" border="1">
+
+            <thead>
+
+                <tr>
+
+                    <th>Milisegundo</th>
+
+                    <th>Aleatorio</th>
+
+                </tr>
+
+            </thead>
+
+        </table>   
+
+        <script>
+
+            let btn = document.getElementById('btn');
+
+            function addlinha() {
+
+                let linhas = document.getElementById('linhas').value;
+                let tabela = document.getElementById('tbl');
+                let tbody = document.createElement('tbody');
+			    tabela.appendChild(tbody);
+                let hora = new Date();
+                ms = hora.getMilliseconds();
+
+                    for (i = 1; i <= linhas; i++) {
+
+                        linha = tbody.insertRow(0)
+
+                        for (j = 1; j <= 1; j++) {
+
+                            celula = linha.insertCell(0)
+                            celula1 = linha.insertCell(1)
+                            celula.innerHTML = ms
+                            celula1.innerHTML = Math.random().toPrecision(5)
+                        }
+                    }
+                    
+                btn.disabled = true
+                btn.innerHTML = "Tabela Gerada";
+            }
+
+            btn.addEventListener('click',addlinha);
+
+        </script> 
+
+        <footer>
+
+            <hr>
+
+            &copy; 25641077 - Diego Ferreira 
+
+        </footer>
+
+    </body>
+    
+</html>
